@@ -11,8 +11,6 @@ const Navbar = ({ authStatus, onLogout }) => {
       console.error("Error al cerrar sesión en el backend:", error);
     } finally {
       onLogout();
-      /* Ya no es necesario el navigate("/login") aca
-      el PrivateRoute nos redirigira automaticamente */
     }
   };
 
@@ -21,7 +19,7 @@ const Navbar = ({ authStatus, onLogout }) => {
       <div className="max-w-6xl mx-auto px-6 py-3 flex justify-between items-center">
         {/* Logo */}
         <h1 className="text-lg md:text-xl font-semibold tracking-tight text-white">
-          Hai<span className="text-red-500 font-bold"> Weiss</span>
+          <span className="text-red-500 font-bold"></span>
         </h1>
 
         {/* Links */}
